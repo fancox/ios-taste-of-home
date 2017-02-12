@@ -14,6 +14,8 @@
 		17A440291E50E30F001C21CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A440271E50E30F001C21CC /* LaunchScreen.storyboard */; };
 		17A440341E50E30F001C21CC /* TasteOfHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440331E50E30F001C21CC /* TasteOfHomeTests.swift */; };
 		17A4403F1E50E30F001C21CC /* TasteOfHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4403E1E50E30F001C21CC /* TasteOfHomeUITests.swift */; };
+		17A4404F1E50E9DC001C21CC /* DisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4404E1E50E9DC001C21CC /* DisplayCard.swift */; };
+		17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440501E50EB08001C21CC /* BrowseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		17A4403A1E50E30F001C21CC /* TasteOfHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TasteOfHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A4403E1E50E30F001C21CC /* TasteOfHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasteOfHomeUITests.swift; sourceTree = "<group>"; };
 		17A440401E50E30F001C21CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17A4404E1E50E9DC001C21CC /* DisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCard.swift; sourceTree = "<group>"; };
+		17A440501E50EB08001C21CC /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				17A4401E1E50E30F001C21CC /* AppDelegate.swift */,
-				17A440201E50E30F001C21CC /* ViewController.swift */,
-				17A440221E50E30F001C21CC /* Main.storyboard */,
 				17A440251E50E30F001C21CC /* Assets.xcassets */,
-				17A440271E50E30F001C21CC /* LaunchScreen.storyboard */,
+				17A440501E50EB08001C21CC /* BrowseViewController.swift */,
+				17A4404E1E50E9DC001C21CC /* DisplayCard.swift */,
 				17A4402A1E50E30F001C21CC /* Info.plist */,
+				17A440271E50E30F001C21CC /* LaunchScreen.storyboard */,
+				17A440221E50E30F001C21CC /* Main.storyboard */,
+				17A440201E50E30F001C21CC /* ViewController.swift */,
 			);
 			path = TasteOfHome;
 			sourceTree = "<group>";
@@ -263,6 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				17A440211E50E30F001C21CC /* ViewController.swift in Sources */,
+				17A4404F1E50E9DC001C21CC /* DisplayCard.swift in Sources */,
+				17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */,
 				17A4401F1E50E30F001C21CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
