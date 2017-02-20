@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		094AD2B081E6D0C57C9F1B5D /* Pods_TasteOfHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A54C4B70F0470953D8670D9B /* Pods_TasteOfHome.framework */; };
 		17A4401F1E50E30F001C21CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4401E1E50E30F001C21CC /* AppDelegate.swift */; };
-		17A440211E50E30F001C21CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440201E50E30F001C21CC /* ViewController.swift */; };
 		17A440241E50E30F001C21CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A440221E50E30F001C21CC /* Main.storyboard */; };
 		17A440261E50E30F001C21CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A440251E50E30F001C21CC /* Assets.xcassets */; };
 		17A440291E50E30F001C21CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A440271E50E30F001C21CC /* LaunchScreen.storyboard */; };
@@ -18,6 +18,10 @@
 		17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440501E50EB08001C21CC /* BrowseViewController.swift */; };
 		17A440531E5B66A8001C21CC /* BreadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */; };
 		17A440551E5B6733001C21CC /* BreadDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */; };
+		17F5DB961E5B810C00A8050C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */; };
+		17F5DB9A1E5B835500A8050C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5DB991E5B835500A8050C /* SignInViewController.swift */; };
+		B14DC3B0B4604BD090C3238F /* Pods_TasteOfHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87F88F77C127BE1E2DAD239 /* Pods_TasteOfHomeUITests.framework */; };
+		EACCD0B62B52FEC138292F9D /* Pods_TasteOfHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04074BBF0432556B550C1D0A /* Pods_TasteOfHomeTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04074BBF0432556B550C1D0A /* Pods_TasteOfHomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasteOfHomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A4401B1E50E30F001C21CC /* TasteOfHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TasteOfHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A4401E1E50E30F001C21CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17A440201E50E30F001C21CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		17A440231E50E30F001C21CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17A440251E50E30F001C21CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A440281E50E30F001C21CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +59,16 @@
 		17A440501E50EB08001C21CC /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
 		17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadDetailViewController.swift; sourceTree = "<group>"; };
 		17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BreadDetailViewController.storyboard; sourceTree = "<group>"; };
+		17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		17F5DB991E5B835500A8050C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		18E612EAB6B9ECB20A234DBF /* Pods-TasteOfHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHomeTests/Pods-TasteOfHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		76315685A99E0687DB91A7D0 /* Pods-TasteOfHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHome.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHome/Pods-TasteOfHome.release.xcconfig"; sourceTree = "<group>"; };
+		785B880F7AA3EF8D6A94E7FF /* Pods-TasteOfHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHomeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHomeUITests/Pods-TasteOfHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		93AAEE5B520352B5ED1E1CD6 /* Pods-TasteOfHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHomeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHomeUITests/Pods-TasteOfHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A54C4B70F0470953D8670D9B /* Pods_TasteOfHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasteOfHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87F88F77C127BE1E2DAD239 /* Pods_TasteOfHomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TasteOfHomeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFEE1A97D53058256411915 /* Pods-TasteOfHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHome/Pods-TasteOfHome.debug.xcconfig"; sourceTree = "<group>"; };
+		FA61850427D222216C401032 /* Pods-TasteOfHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHomeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHomeTests/Pods-TasteOfHomeTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				094AD2B081E6D0C57C9F1B5D /* Pods_TasteOfHome.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACCD0B62B52FEC138292F9D /* Pods_TasteOfHomeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14DC3B0B4604BD090C3238F /* Pods_TasteOfHomeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +106,8 @@
 				17A440321E50E30F001C21CC /* TasteOfHomeTests */,
 				17A4403D1E50E30F001C21CC /* TasteOfHomeUITests */,
 				17A4401C1E50E30F001C21CC /* Products */,
+				C815A5C1BCB2BD1562D40E7B /* Pods */,
+				D45C25C41E3EBADFDD182973 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,14 +126,15 @@
 			children = (
 				17A4401E1E50E30F001C21CC /* AppDelegate.swift */,
 				17A440251E50E30F001C21CC /* Assets.xcassets */,
+				17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */,
+				17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */,
 				17A440501E50EB08001C21CC /* BrowseViewController.swift */,
 				17A4404E1E50E9DC001C21CC /* DisplayCard.swift */,
+				17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */,
 				17A4402A1E50E30F001C21CC /* Info.plist */,
 				17A440271E50E30F001C21CC /* LaunchScreen.storyboard */,
 				17A440221E50E30F001C21CC /* Main.storyboard */,
-				17A440201E50E30F001C21CC /* ViewController.swift */,
-				17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */,
-				17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */,
+				17F5DB991E5B835500A8050C /* SignInViewController.swift */,
 			);
 			path = TasteOfHome;
 			sourceTree = "<group>";
@@ -137,6 +157,29 @@
 			path = TasteOfHomeUITests;
 			sourceTree = "<group>";
 		};
+		C815A5C1BCB2BD1562D40E7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CEFEE1A97D53058256411915 /* Pods-TasteOfHome.debug.xcconfig */,
+				76315685A99E0687DB91A7D0 /* Pods-TasteOfHome.release.xcconfig */,
+				18E612EAB6B9ECB20A234DBF /* Pods-TasteOfHomeTests.debug.xcconfig */,
+				FA61850427D222216C401032 /* Pods-TasteOfHomeTests.release.xcconfig */,
+				785B880F7AA3EF8D6A94E7FF /* Pods-TasteOfHomeUITests.debug.xcconfig */,
+				93AAEE5B520352B5ED1E1CD6 /* Pods-TasteOfHomeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D45C25C41E3EBADFDD182973 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A54C4B70F0470953D8670D9B /* Pods_TasteOfHome.framework */,
+				04074BBF0432556B550C1D0A /* Pods_TasteOfHomeTests.framework */,
+				B87F88F77C127BE1E2DAD239 /* Pods_TasteOfHomeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17A440431E50E30F001C21CC /* Build configuration list for PBXNativeTarget "TasteOfHome" */;
 			buildPhases = (
+				1330D575AD20E41464C2A68C /* [CP] Check Pods Manifest.lock */,
 				17A440171E50E30F001C21CC /* Sources */,
 				17A440181E50E30F001C21CC /* Frameworks */,
 				17A440191E50E30F001C21CC /* Resources */,
+				8EA381F7EC8FD9C6584ECA05 /* [CP] Embed Pods Frameworks */,
+				8B2492A189760766C940A32A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -161,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17A440461E50E30F001C21CC /* Build configuration list for PBXNativeTarget "TasteOfHomeTests" */;
 			buildPhases = (
+				618D376235F9C1B3DD1B5C90 /* [CP] Check Pods Manifest.lock */,
 				17A4402B1E50E30F001C21CC /* Sources */,
 				17A4402C1E50E30F001C21CC /* Frameworks */,
 				17A4402D1E50E30F001C21CC /* Resources */,
+				E5B771B1CE34C603A18DE29E /* [CP] Embed Pods Frameworks */,
+				E5E21251DCF39DFBCEA6C40E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17A440491E50E30F001C21CC /* Build configuration list for PBXNativeTarget "TasteOfHomeUITests" */;
 			buildPhases = (
+				907C190BC184A0181CED5EC7 /* [CP] Check Pods Manifest.lock */,
 				17A440361E50E30F001C21CC /* Sources */,
 				17A440371E50E30F001C21CC /* Frameworks */,
 				17A440381E50E30F001C21CC /* Resources */,
+				EA61780755F0BA9588CF0BFC /* [CP] Embed Pods Frameworks */,
+				008FF1CD82230C10AB3FA871 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +301,7 @@
 			files = (
 				17A440291E50E30F001C21CC /* LaunchScreen.storyboard in Resources */,
 				17A440261E50E30F001C21CC /* Assets.xcassets in Resources */,
+				17F5DB961E5B810C00A8050C /* GoogleService-Info.plist in Resources */,
 				17A440241E50E30F001C21CC /* Main.storyboard in Resources */,
 				17A440551E5B6733001C21CC /* BreadDetailViewController.storyboard in Resources */,
 			);
@@ -270,13 +323,151 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		008FF1CD82230C10AB3FA871 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasteOfHomeUITests/Pods-TasteOfHomeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1330D575AD20E41464C2A68C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		618D376235F9C1B3DD1B5C90 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B2492A189760766C940A32A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasteOfHome/Pods-TasteOfHome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA381F7EC8FD9C6584ECA05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasteOfHome/Pods-TasteOfHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		907C190BC184A0181CED5EC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B771B1CE34C603A18DE29E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasteOfHomeTests/Pods-TasteOfHomeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E21251DCF39DFBCEA6C40E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasteOfHomeTests/Pods-TasteOfHomeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA61780755F0BA9588CF0BFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TasteOfHomeUITests/Pods-TasteOfHomeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		17A440171E50E30F001C21CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17A440211E50E30F001C21CC /* ViewController.swift in Sources */,
 				17A4404F1E50E9DC001C21CC /* DisplayCard.swift in Sources */,
+				17F5DB9A1E5B835500A8050C /* SignInViewController.swift in Sources */,
 				17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */,
 				17A4401F1E50E30F001C21CC /* AppDelegate.swift in Sources */,
 				17A440531E5B66A8001C21CC /* BreadDetailViewController.swift in Sources */,
@@ -429,6 +620,7 @@
 		};
 		17A440441E50E30F001C21CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEFEE1A97D53058256411915 /* Pods-TasteOfHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H9AG8MMMTC;
@@ -442,6 +634,7 @@
 		};
 		17A440451E50E30F001C21CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76315685A99E0687DB91A7D0 /* Pods-TasteOfHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H9AG8MMMTC;
@@ -455,6 +648,7 @@
 		};
 		17A440471E50E30F001C21CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18E612EAB6B9ECB20A234DBF /* Pods-TasteOfHomeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -470,6 +664,7 @@
 		};
 		17A440481E50E30F001C21CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA61850427D222216C401032 /* Pods-TasteOfHomeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +680,7 @@
 		};
 		17A4404A1E50E30F001C21CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785B880F7AA3EF8D6A94E7FF /* Pods-TasteOfHomeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = H9AG8MMMTC;
@@ -499,6 +695,7 @@
 		};
 		17A4404B1E50E30F001C21CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93AAEE5B520352B5ED1E1CD6 /* Pods-TasteOfHomeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = H9AG8MMMTC;
