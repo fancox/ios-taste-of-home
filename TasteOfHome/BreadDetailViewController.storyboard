@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bread Detail View Controller-->
+        <scene sceneID="if9-DV-3NF">
+            <objects>
+                <viewController storyboardIdentifier="BreadDetailViewController" id="XEf-Ye-4Fh" customClass="BreadDetailViewController" customModule="TasteOfHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EZj-Nl-ROm"/>
+                        <viewControllerLayoutGuide type="bottom" id="83w-IJ-m66"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NbR-4N-afo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ym1-dc-IcZ">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vfE-pG-xn2">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="248"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by Fan Chen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Scq-2y-tch">
+                                        <rect key="frame" x="0.0" y="248" width="343" height="378.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wc-zg-ed6">
+                                        <rect key="frame" x="0.0" y="626.5" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ym1-dc-IcZ" firstAttribute="leading" secondItem="NbR-4N-afo" secondAttribute="leadingMargin" id="3Gt-ba-Zbj"/>
+                            <constraint firstItem="ym1-dc-IcZ" firstAttribute="top" secondItem="EZj-Nl-ROm" secondAttribute="bottom" id="6hN-HM-2Wd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ym1-dc-IcZ" secondAttribute="trailing" id="997-wH-Yvl"/>
+                            <constraint firstItem="83w-IJ-m66" firstAttribute="top" secondItem="ym1-dc-IcZ" secondAttribute="bottom" id="gcT-Sa-zvo"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="breadTitle" destination="Scq-2y-tch" id="Yx3-oI-8pZ"/>
+                        <outlet property="heroImageView" destination="vfE-pG-xn2" id="Mwl-gS-6Dh"/>
+                        <outlet property="subtitle" destination="3Wc-zg-ed6" id="h5u-sH-Azz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZL-zX-bFg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.799999999999997" y="162.3688155922039"/>
+        </scene>
+    </scenes>
+</document>

@@ -35,6 +35,7 @@ extension BrowseViewController {
         card.heroImageTitle = nearByResults[row].imageName
         card.titleLabel.text = result.displayCardTitle()
         card.subtitleLabel.text = result.displayCardSubTitle()
+        card.styleCell()
         return card
     }
     
@@ -42,6 +43,13 @@ extension BrowseViewController {
         return "Near by"
     }
 
+}
+
+extension BrowseViewController {
+    public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let controller = UIStoryboard(name: String(describing: BreadDetailViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: BreadDetailViewController.self))
+        navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
 struct SearchHit {

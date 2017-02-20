@@ -23,6 +23,13 @@ class DisplayCard: UITableViewCell {
             updateHeroImageView()
         }
     }
+    
+    func styleCell() {
+        stackView.spacing = 5
+        heroImageView.contentMode = .scaleAspectFit
+        heroImageView.layer.borderWidth = 1
+        heroImageView.layer.borderColor = UIColor.gray.cgColor
+    }
 
     private func updateHeroImageView() {
         heroImageView.image = UIImage(named: heroImageTitle)

@@ -107,11 +107,11 @@
             </objects>
             <point key="canvasLocation" x="1705" y="377"/>
         </scene>
-        <!--Item-->
+        <!--Browse-->
         <scene sceneID="btS-2b-naA">
             <objects>
                 <navigationController id="hBl-Qc-Wfx" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="YxM-E9-631"/>
+                    <tabBarItem key="tabBarItem" title="Browse" id="YxM-E9-631"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nPJ-Do-NCl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -204,8 +204,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="wwN-C8-r9I" kind="relationship" relationship="viewControllers" id="2fw-W3-tWc"/>
                         <segue destination="hBl-Qc-Wfx" kind="relationship" relationship="viewControllers" id="9v2-eU-Hzc"/>
+                        <segue destination="wwN-C8-r9I" kind="relationship" relationship="viewControllers" id="2fw-W3-tWc"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jd7-RB-EZo" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -16,6 +16,8 @@
 		17A4403F1E50E30F001C21CC /* TasteOfHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4403E1E50E30F001C21CC /* TasteOfHomeUITests.swift */; };
 		17A4404F1E50E9DC001C21CC /* DisplayCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4404E1E50E9DC001C21CC /* DisplayCard.swift */; };
 		17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440501E50EB08001C21CC /* BrowseViewController.swift */; };
+		17A440531E5B66A8001C21CC /* BreadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */; };
+		17A440551E5B6733001C21CC /* BreadDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		17A440401E50E30F001C21CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17A4404E1E50E9DC001C21CC /* DisplayCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayCard.swift; sourceTree = "<group>"; };
 		17A440501E50EB08001C21CC /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadDetailViewController.swift; sourceTree = "<group>"; };
+		17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BreadDetailViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				17A440271E50E30F001C21CC /* LaunchScreen.storyboard */,
 				17A440221E50E30F001C21CC /* Main.storyboard */,
 				17A440201E50E30F001C21CC /* ViewController.swift */,
+				17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */,
+				17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */,
 			);
 			path = TasteOfHome;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 				17A440291E50E30F001C21CC /* LaunchScreen.storyboard in Resources */,
 				17A440261E50E30F001C21CC /* Assets.xcassets in Resources */,
 				17A440241E50E30F001C21CC /* Main.storyboard in Resources */,
+				17A440551E5B6733001C21CC /* BreadDetailViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +279,7 @@
 				17A4404F1E50E9DC001C21CC /* DisplayCard.swift in Sources */,
 				17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */,
 				17A4401F1E50E30F001C21CC /* AppDelegate.swift in Sources */,
+				17A440531E5B66A8001C21CC /* BreadDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +530,7 @@
 				17A440451E50E30F001C21CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A440461E50E30F001C21CC /* Build configuration list for PBXNativeTarget "TasteOfHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +539,7 @@
 				17A440481E50E30F001C21CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17A440491E50E30F001C21CC /* Build configuration list for PBXNativeTarget "TasteOfHomeUITests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +548,7 @@
 				17A4404B1E50E30F001C21CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
