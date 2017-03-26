@@ -54,6 +54,7 @@
                     <connections>
                         <outlet property="breadTitle" destination="Scq-2y-tch" id="Yx3-oI-8pZ"/>
                         <outlet property="heroImageView" destination="vfE-pG-xn2" id="Mwl-gS-6Dh"/>
+                        <outlet property="stackView" destination="ym1-dc-IcZ" id="8hd-Tx-zN6"/>
                         <outlet property="subtitle" destination="3Wc-zg-ed6" id="h5u-sH-Azz"/>
                     </connections>
                 </viewController>
