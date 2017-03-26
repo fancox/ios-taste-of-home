@@ -16,21 +16,38 @@ class BrowseViewController: UITableViewController {
     loadData()
   }
   
-  public var nearByResults: [SearchHit] = [
-    SearchHit(imageName: "pusheen", chefTitle: "Fan Chen", foodTitle: "Chalolol bread", distance: 0.1)
-  ]
+  fileprivate var nearByResults = [SearchHit]()
   
   private func loadData() {
     
-    let url = URL(string: "http://noms-search.stockwatcher.co/facetSearch?latitude=37&longitude=-122&distance=70")!
+    let url = URL(string: "https://noms-search.stockwatcher.co/facetSearch?latitude=37&longitude=-122&distance=70")!
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
     
-    URLSession.shared.dataTask(with: request) { data, response, error in
-      if let data = data {
-        print(data)
+    let task = URLSession.shared.dataTask(with: request) { [weak self] data, response, error in
+      if let error = error {
+        print(error.localizedDescription)
+        return
+      }
+      if let data = data,
+        let json = try? JSONSerialization.jsonObject(with: data, options: []),
+        let jsonDict = json as? [String: Any] {
+        for (_, value) in jsonDict {
+          let hit = SearchHit()
+          if let parsedValue = value as? [String: Any] {
+            if let photoArray = parsedValue["photos"] as? [String] {
+              hit.imageURL = photoArray[1]
+            }
+            hit.chefTitle = parsedValue["seller"] as? String ?? ""
+            hit.foodTitle = parsedValue["name"] as? String ?? ""
+            hit.distance = 1.2 //TODO need this
+          }
+          self?.nearByResults.append(hit)
+        }
+        self?.tableView.reloadData()
       }
     }
+    task.resume()
   }
 }
 
@@ -46,7 +63,7 @@ extension BrowseViewController {
       else { return UITableViewCell() }
     let row = indexPath.row
     let result = nearByResults[row]
-    card.heroImageTitle = nearByResults[row].imageName
+    card.heroImageURLString = nearByResults[row].imageURL
     card.titleLabel.text = result.displayCardTitle()
     card.subtitleLabel.text = result.displayCardSubTitle()
     card.styleCell()
@@ -61,16 +78,17 @@ extension BrowseViewController {
 
 extension BrowseViewController {
   public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    let controller = UIStoryboard(name: String(describing: BreadDetailViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: BreadDetailViewController.self))
+    guard let controller = UIStoryboard(name: String(describing: BreadDetailViewController.self), bundle: nil).instantiateViewController(withIdentifier: String(describing: BreadDetailViewController.self)) as? BreadDetailViewController else { return }
+    controller.searchHit = nearByResults[indexPath.row]
     navigationController?.pushViewController(controller, animated: true)
   }
 }
 
-struct SearchHit {
-  var imageName: String
-  var chefTitle: String
-  var foodTitle: String
-  var distance: Double
+class SearchHit {
+  var imageURL: String = ""
+  var chefTitle: String = ""
+  var foodTitle: String = ""
+  var distance: Double = 0
 }
 
 extension SearchHit {
