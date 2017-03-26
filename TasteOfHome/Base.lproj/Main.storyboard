@@ -22,55 +22,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="neko_0001" translatesAutoresizingMaskIntoConstraints="NO" id="GIN-Hq-vTm">
-                                <rect key="frame" x="16" y="120" width="343" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="eNa-UB-HbI"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheesecake" translatesAutoresizingMaskIntoConstraints="NO" id="GIN-Hq-vTm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="754-rL-g2a">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F2w-aQ-qfX">
-                                <rect key="frame" x="138" y="532" width="100" height="65"/>
+                                <rect key="frame" x="131.5" y="532" width="113" height="100"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GG-M5-Z9k">
-                                        <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="30"/>
                                         <color key="backgroundColor" red="0.15157721690000001" green="0.50196078430000002" blue="0.07950610139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Log in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7R-BX-5fb">
-                                        <rect key="frame" x="0.0" y="35" width="100" height="30"/>
+                                        <rect key="frame" x="0.0" y="35" width="113" height="30"/>
                                         <color key="backgroundColor" red="0.15157721690000001" green="0.50196078430000002" blue="0.07950610139" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Sign up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-A2-Le4">
+                                        <rect key="frame" x="0.0" y="70" width="113" height="30"/>
+                                        <state key="normal" title="Browse as guest">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapBrowseAsGuestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W6l-RG-ntl"/>
+                                            <segue destination="qMk-qb-mh4" kind="show" id="yT7-Nh-zYQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="jyy-Ok-4mP"/>
-                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-A2-Le4">
-                                <rect key="frame" x="131" y="617" width="113" height="30"/>
-                                <state key="normal" title="Browse as guest">
-                                    <color key="titleColor" red="0.23674325862617529" green="0.25491532470474254" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="didTapBrowseAsGuestButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W6l-RG-ntl"/>
-                                    <segue destination="qMk-qb-mh4" kind="show" id="yT7-Nh-zYQ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wAi-A2-Le4" firstAttribute="top" secondItem="F2w-aQ-qfX" secondAttribute="bottom" constant="20" id="Iix-Cd-VVm"/>
+                            <constraint firstAttribute="bottom" secondItem="GIN-Hq-vTm" secondAttribute="bottom" id="03E-4W-hNt"/>
+                            <constraint firstItem="GIN-Hq-vTm" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HvJ-jh-x8U"/>
                             <constraint firstItem="F2w-aQ-qfX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IlY-gr-ZNW"/>
-                            <constraint firstItem="GIN-Hq-vTm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OhC-BX-Hxw"/>
-                            <constraint firstItem="wAi-A2-Le4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QqM-JP-uLR"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wAi-A2-Le4" secondAttribute="bottom" constant="20" id="RVf-zY-ry9"/>
-                            <constraint firstItem="GIN-Hq-vTm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Sm2-iM-Qet"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GIN-Hq-vTm" secondAttribute="trailing" id="Tku-0V-87D"/>
-                            <constraint firstItem="GIN-Hq-vTm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="uYK-LQ-J9k"/>
+                            <constraint firstItem="754-rL-g2a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="RRE-PV-9Qx"/>
+                            <constraint firstItem="GIN-Hq-vTm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Sm2-iM-Qet"/>
+                            <constraint firstItem="754-rL-g2a" firstAttribute="top" secondItem="GIN-Hq-vTm" secondAttribute="top" id="esy-RJ-e4f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="F2w-aQ-qfX" secondAttribute="bottom" constant="35" id="iEU-NV-RIS"/>
+                            <constraint firstAttribute="trailing" secondItem="GIN-Hq-vTm" secondAttribute="trailing" id="j1S-so-Cw9"/>
+                            <constraint firstAttribute="trailing" secondItem="754-rL-g2a" secondAttribute="trailing" id="oGC-wF-x9U"/>
+                            <constraint firstItem="754-rL-g2a" firstAttribute="bottom" secondItem="GIN-Hq-vTm" secondAttribute="bottom" id="qcL-tT-fDR"/>
                         </constraints>
                     </view>
                     <connections>
@@ -79,7 +79,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-266" y="122"/>
+            <point key="canvasLocation" x="-266.39999999999998" y="121.88905547226388"/>
         </scene>
         <!--Baker-->
         <scene sceneID="hxB-VM-Yrg">
@@ -219,6 +219,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="neko_0001" width="792" height="612"/>
+        <image name="cheesecake" width="375" height="667"/>
     </resources>
 </document>

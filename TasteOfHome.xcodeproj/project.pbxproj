@@ -125,16 +125,12 @@
 			isa = PBXGroup;
 			children = (
 				17A4401E1E50E30F001C21CC /* AppDelegate.swift */,
+				17D5988B1E88263A007D1303 /* Storyboards */,
+				17D598891E88260E007D1303 /* ViewControllers */,
+				17D5988C1E88265D007D1303 /* Views */,
 				17A440251E50E30F001C21CC /* Assets.xcassets */,
-				17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */,
-				17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */,
-				17A440501E50EB08001C21CC /* BrowseViewController.swift */,
-				17A4404E1E50E9DC001C21CC /* DisplayCard.swift */,
 				17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */,
 				17A4402A1E50E30F001C21CC /* Info.plist */,
-				17A440271E50E30F001C21CC /* LaunchScreen.storyboard */,
-				17A440221E50E30F001C21CC /* Main.storyboard */,
-				17F5DB991E5B835500A8050C /* SignInViewController.swift */,
 			);
 			path = TasteOfHome;
 			sourceTree = "<group>";
@@ -155,6 +151,34 @@
 				17A440401E50E30F001C21CC /* Info.plist */,
 			);
 			path = TasteOfHomeUITests;
+			sourceTree = "<group>";
+		};
+		17D598891E88260E007D1303 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */,
+				17A440501E50EB08001C21CC /* BrowseViewController.swift */,
+				17F5DB991E5B835500A8050C /* SignInViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17D5988B1E88263A007D1303 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				17A440271E50E30F001C21CC /* LaunchScreen.storyboard */,
+				17A440221E50E30F001C21CC /* Main.storyboard */,
+				17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		17D5988C1E88265D007D1303 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17A4404E1E50E9DC001C21CC /* DisplayCard.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		C815A5C1BCB2BD1562D40E7B /* Pods */ = {
@@ -257,7 +281,7 @@
 				TargetAttributes = {
 					17A4401A1E50E30F001C21CC = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = H9AG8MMMTC;
+						DevelopmentTeam = 4LZ3X9TX28;
 						ProvisioningStyle = Automatic;
 					};
 					17A4402E1E50E30F001C21CC = {
@@ -623,7 +647,7 @@
 			baseConfigurationReference = CEFEE1A97D53058256411915 /* Pods-TasteOfHome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = H9AG8MMMTC;
+				DEVELOPMENT_TEAM = 4LZ3X9TX28;
 				INFOPLIST_FILE = TasteOfHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fchen.TasteOfHome;
@@ -637,7 +661,7 @@
 			baseConfigurationReference = 76315685A99E0687DB91A7D0 /* Pods-TasteOfHome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = H9AG8MMMTC;
+				DEVELOPMENT_TEAM = 4LZ3X9TX28;
 				INFOPLIST_FILE = TasteOfHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fchen.TasteOfHome;
