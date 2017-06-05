@@ -37,8 +37,17 @@ class BrowseViewController: UITableViewController {
           if let photoArray = value["photos"] as? [String] {
             hit.imageURL = photoArray[1]
           }
-          hit.chefTitle = "???"
+          if let seller = value["seller"] as? [String : String],
+            let title = seller["name"] {
+            hit.chefTitle = title
+          }
           hit.foodTitle = value["name"] as? String ?? ""
+          if let distance = value["distance"] as? NSNumber {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            formatter.maximumFractionDigits = 1
+            hit.distance = formatter.string(from: distance) ?? "0"
+          }
           self?.nearByResults.append(hit)
         }
         self?.tableView.reloadData()
@@ -85,7 +94,7 @@ class SearchHit {
   var imageURL: String = ""
   var chefTitle: String = ""
   var foodTitle: String = ""
-  var distance: Double = 0
+  var distance: String = "0"
 }
 
 extension SearchHit {
@@ -94,6 +103,6 @@ extension SearchHit {
   }
   
   func displayCardSubTitle() -> String {
-    return distance.description + "miles away"
+    return distance.description + " km away"
   }
 }
