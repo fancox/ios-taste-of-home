@@ -650,9 +650,10 @@
 				DEVELOPMENT_TEAM = 4LZ3X9TX28;
 				INFOPLIST_FILE = TasteOfHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fchen.TasteOfHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fansoffan.TasteOfHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -664,9 +665,10 @@
 				DEVELOPMENT_TEAM = 4LZ3X9TX28;
 				INFOPLIST_FILE = TasteOfHome/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fchen.TasteOfHome;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fansoffan.TasteOfHome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

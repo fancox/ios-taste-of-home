@@ -31,17 +31,14 @@ class BrowseViewController: UITableViewController {
       }
       if let data = data,
         let json = try? JSONSerialization.jsonObject(with: data, options: []),
-        let jsonDict = json as? [String: Any] {
-        for (_, value) in jsonDict {
+        let jsonDict = json as? [[String: Any]] {
+        for value in jsonDict {
           let hit = SearchHit()
-          if let parsedValue = value as? [String: Any] {
-            if let photoArray = parsedValue["photos"] as? [String] {
-              hit.imageURL = photoArray[1]
-            }
-            hit.chefTitle = parsedValue["seller"] as? String ?? ""
-            hit.foodTitle = parsedValue["name"] as? String ?? ""
-            hit.distance = 1.2 //TODO need this
+          if let photoArray = value["photos"] as? [String] {
+            hit.imageURL = photoArray[1]
           }
+          hit.chefTitle = "???"
+          hit.foodTitle = value["name"] as? String ?? ""
           self?.nearByResults.append(hit)
         }
         self?.tableView.reloadData()
