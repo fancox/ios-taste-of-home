@@ -48,7 +48,8 @@ class TallCard: UITableViewCell {
     containerView.translatesAutoresizingMaskIntoConstraints = false
     containerView.clipsToBounds = true
     containerView.layer.cornerRadius = 10
-    containerView.backgroundColor = .red
+    containerView.layer.borderColor = Colors.lightGray.cgColor
+    containerView.layer.borderWidth = 1
     contentView.addSubview(containerView)
   }
   
@@ -63,65 +64,73 @@ class TallCard: UITableViewCell {
   
   private func setUpBlackOverlay() {
     blackOverlay.translatesAutoresizingMaskIntoConstraints = false
+    blackOverlay.backgroundColor = UIColor.black.withAlphaComponent(0.4)
     containerView.addSubview(blackOverlay)
   }
   
   private func setUpHorizontalStackView() {
     horizontalStackView.translatesAutoresizingMaskIntoConstraints = false
     horizontalStackView.axis = .horizontal
+    horizontalStackView.spacing = 20
+    horizontalStackView.alignment = .top
     containerView.addSubview(horizontalStackView)
   }
   
   private func setUpVerticalStackView() {
     verticalStackView.translatesAutoresizingMaskIntoConstraints = false
     verticalStackView.axis = .vertical
+    verticalStackView.alignment = .center
+    verticalStackView.spacing = 4
     horizontalStackView.addArrangedSubview(verticalStackView)
   }
   
   private func setUpProfileImage() {
     profileImage.translatesAutoresizingMaskIntoConstraints = false
-//    if let url = URL(string: searchHit.imageURL) { //TODO: add profile image
-//      profileImage.sd_setImage(with: url)
-//    }
-    profileImage.layer.cornerRadius = 15
+    if let url = URL(string: searchHit.imageURL) { //TODO: add profile image
+      profileImage.sd_setImage(with: url)
+    }
+    profileImage.layer.cornerRadius = 20
+    profileImage.clipsToBounds = true
+    profileImage.layer.borderWidth = 2
+    profileImage.layer.borderColor = UIColor.white.cgColor
     verticalStackView.addArrangedSubview(profileImage)
   }
   
   private func setUpFirstNameLabel() {
     firstNameLabel.translatesAutoresizingMaskIntoConstraints = false
     firstNameLabel.text = searchHit.chefTitle
+    firstNameLabel.textColor = Colors.orange
     verticalStackView.addArrangedSubview(firstNameLabel)
   }
   
   private func setUpDistanceLabel() {
     distanceLabel.translatesAutoresizingMaskIntoConstraints = false
     distanceLabel.text = searchHit.distance
+    distanceLabel.textColor = Colors.orange
     verticalStackView.addArrangedSubview(distanceLabel)
   }
   
   private func setUpDescriptionLabel() {
     descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-    descriptionLabel.text = searchHit.displayCardSubTitle()
+    descriptionLabel.text = searchHit.description
+    descriptionLabel.textColor = Colors.orange
     horizontalStackView.addArrangedSubview(descriptionLabel)
   }
   
   private func setUpConstraints() {
-    setUpSelfConstraints()
     setUpContainerViewContraints()
     setUpHeroImageConstraints()
     setUpBlackOverlayConstraints()
     setUpHorizontalStackViewConstraints()
-  }
-  
-  private func setUpSelfConstraints() {
-    heightAnchor.constraint(equalToConstant: 600).isActive = true
+    setUpVerticalStackViewConstraints()
+    setUpProfileImageConstraints()
   }
   
   private func setUpContainerViewContraints() {
-    containerView.topAnchor.constraint(equalTo: topAnchor).isActive = true
-    containerView.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
-    containerView.leadingAnchor.constraint(equalTo: leadingAnchor).isActive = true
-    containerView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
+    containerView.topAnchor.constraint(equalTo: layoutMarginsGuide.topAnchor).isActive = true
+    containerView.bottomAnchor.constraint(equalTo: layoutMarginsGuide.bottomAnchor).isActive = true
+    containerView.leadingAnchor.constraint(equalTo: layoutMarginsGuide.leadingAnchor).isActive = true
+    containerView.trailingAnchor.constraint(equalTo: layoutMarginsGuide.trailingAnchor).isActive = true
   }
   
   private func setUpHeroImageConstraints() {
@@ -142,9 +151,18 @@ class TallCard: UITableViewCell {
   }
   
   private func setUpHorizontalStackViewConstraints() {
-    horizontalStackView.topAnchor.constraint(equalTo: heroImageView.bottomAnchor).isActive = true
-    horizontalStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor).isActive = true
-    horizontalStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor).isActive = true
-    horizontalStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor).isActive = true
+    horizontalStackView.topAnchor.constraint(equalTo: heroImageView.bottomAnchor, constant: 4).isActive = true
+    horizontalStackView.bottomAnchor.constraint(equalTo: containerView.layoutMarginsGuide.bottomAnchor).isActive = true
+    horizontalStackView.leadingAnchor.constraint(equalTo: containerView.layoutMarginsGuide.leadingAnchor).isActive = true
+    horizontalStackView.trailingAnchor.constraint(equalTo: containerView.layoutMarginsGuide.trailingAnchor).isActive = true
+  }
+  
+  private func setUpVerticalStackViewConstraints() {
+    verticalStackView.widthAnchor.constraint(equalToConstant: 100).isActive = true
+  }
+  
+  private func setUpProfileImageConstraints() {
+    profileImage.heightAnchor.constraint(equalToConstant: 40).isActive = true
+    profileImage.widthAnchor.constraint(equalTo: profileImage.heightAnchor).isActive = true
   }
 }

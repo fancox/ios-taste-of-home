@@ -12,6 +12,7 @@ class BrowseViewController: UITableViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    tableView.rowHeight = 280
     title = "Browse"
     loadData()
   }
@@ -48,6 +49,7 @@ class BrowseViewController: UITableViewController {
             formatter.maximumFractionDigits = 1
             hit.distance = formatter.string(from: distance) ?? "0"
           }
+          hit.description = value["description"] as? String ?? ""
           self?.nearByResults.append(hit)
         }
       }
@@ -76,6 +78,7 @@ extension BrowseViewController {
 //    card.styleCell()
 //    return card
     let card = TallCard(searchHit: nearByResults[indexPath.row])
+
     return card
   }
   
@@ -98,6 +101,7 @@ class SearchHit {
   var chefTitle: String = ""
   var foodTitle: String = ""
   var distance: String = "0"
+  var description: String = ""
 }
 
 extension SearchHit {

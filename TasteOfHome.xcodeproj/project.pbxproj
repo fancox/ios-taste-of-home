@@ -19,6 +19,7 @@
 		17A440531E5B66A8001C21CC /* BreadDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */; };
 		17A440551E5B6733001C21CC /* BreadDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */; };
 		17B31F4D1EE9BF1100D33E58 /* TallCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B31F4C1EE9BF1100D33E58 /* TallCard.swift */; };
+		17B31F4F1EE9DC9900D33E58 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B31F4E1EE9DC9900D33E58 /* Colors.swift */; };
 		17F5DB961E5B810C00A8050C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */; };
 		17F5DB9A1E5B835500A8050C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5DB991E5B835500A8050C /* SignInViewController.swift */; };
 		B14DC3B0B4604BD090C3238F /* Pods_TasteOfHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87F88F77C127BE1E2DAD239 /* Pods_TasteOfHomeUITests.framework */; };
@@ -61,6 +62,7 @@
 		17A440521E5B66A8001C21CC /* BreadDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadDetailViewController.swift; sourceTree = "<group>"; };
 		17A440541E5B6733001C21CC /* BreadDetailViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BreadDetailViewController.storyboard; sourceTree = "<group>"; };
 		17B31F4C1EE9BF1100D33E58 /* TallCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TallCard.swift; sourceTree = "<group>"; };
+		17B31F4E1EE9DC9900D33E58 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		17F5DB991E5B835500A8050C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		18E612EAB6B9ECB20A234DBF /* Pods-TasteOfHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TasteOfHomeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TasteOfHomeTests/Pods-TasteOfHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				17A440251E50E30F001C21CC /* Assets.xcassets */,
 				17F5DB951E5B810C00A8050C /* GoogleService-Info.plist */,
 				17A4402A1E50E30F001C21CC /* Info.plist */,
+				17B31F4E1EE9DC9900D33E58 /* Colors.swift */,
 			);
 			path = TasteOfHome;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				17A4404F1E50E9DC001C21CC /* DisplayCard.swift in Sources */,
 				17F5DB9A1E5B835500A8050C /* SignInViewController.swift in Sources */,
 				17A440511E50EB08001C21CC /* BrowseViewController.swift in Sources */,
+				17B31F4F1EE9DC9900D33E58 /* Colors.swift in Sources */,
 				17A4401F1E50E30F001C21CC /* AppDelegate.swift in Sources */,
 				17B31F4D1EE9BF1100D33E58 /* TallCard.swift in Sources */,
 				17A440531E5B66A8001C21CC /* BreadDetailViewController.swift in Sources */,
