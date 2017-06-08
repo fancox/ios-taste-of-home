@@ -50,8 +50,9 @@ class BrowseViewController: UITableViewController {
           }
           self?.nearByResults.append(hit)
         }
-        self?.tableView.reloadData()
       }
+      
+      self?.tableView.reloadData()
     }
     task.resume()
   }
@@ -65,14 +66,16 @@ extension BrowseViewController {
   }
   
   public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let card = tableView.dequeueReusableCell(withIdentifier: String(describing: DisplayCard.self), for: indexPath) as? DisplayCard
-      else { return UITableViewCell() }
-    let row = indexPath.row
-    let result = nearByResults[row]
-    card.heroImageURLString = nearByResults[row].imageURL
-    card.titleLabel.text = result.displayCardTitle()
-    card.subtitleLabel.text = result.displayCardSubTitle()
-    card.styleCell()
+//    guard let card = tableView.dequeueReusableCell(withIdentifier: String(describing: DisplayCard.self), for: indexPath) as? DisplayCard
+//      else { return UITableViewCell() }
+//    let row = indexPath.row
+//    let result = nearByResults[row]
+//    card.heroImageURLString = nearByResults[row].imageURL
+//    card.titleLabel.text = result.displayCardTitle()
+//    card.subtitleLabel.text = result.displayCardSubTitle()
+//    card.styleCell()
+//    return card
+    let card = TallCard(searchHit: nearByResults[indexPath.row])
     return card
   }
   
