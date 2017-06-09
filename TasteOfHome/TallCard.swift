@@ -33,6 +33,7 @@ class TallCard: UITableViewCell {
   private let descriptionLabel = UILabel()
   
   private func setUp() {
+    setUpContentView()
     setUpContainerView()
     setUpHeroImage()
     setUpBlackOverlay()
@@ -44,12 +45,21 @@ class TallCard: UITableViewCell {
     setUpDescriptionLabel()
   }
   
+  private func setUpContentView() {
+    contentView.layer.shadowColor = UIColor.black.withAlphaComponent(0.5).cgColor
+    contentView.layer.shadowOffset = CGSize(width: 0, height: 2)
+    contentView.layer.shadowRadius = 4
+    contentView.layer.shadowOpacity = 1
+    containerView.backgroundColor = UIColor.white
+  }
+  
   private func setUpContainerView() {
     containerView.translatesAutoresizingMaskIntoConstraints = false
     containerView.clipsToBounds = true
     containerView.layer.cornerRadius = 10
     containerView.layer.borderColor = Colors.lightGray.cgColor
     containerView.layer.borderWidth = 1
+    containerView.backgroundColor = UIColor.white
     contentView.addSubview(containerView)
   }
   

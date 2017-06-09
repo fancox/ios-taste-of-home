@@ -95,21 +95,3 @@ extension BrowseViewController {
     navigationController?.pushViewController(controller, animated: true)
   }
 }
-
-class SearchHit {
-  var imageURL: String = ""
-  var chefTitle: String = ""
-  var foodTitle: String = ""
-  var distance: String = "0"
-  var description: String = ""
-}
-
-extension SearchHit {
-  func displayCardTitle() -> String {
-    return foodTitle + ", made by " + chefTitle
-  }
-  
-  func displayCardSubTitle() -> String {
-    return distance.description + " km away"
-  }
-}
